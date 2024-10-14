@@ -70,4 +70,7 @@ public class User {
     @OneToMany(mappedBy="student")
     private Set<EssayResults> essayResults;
 
+    public User(int userId) {
+        this.userId = userId;
+    }
 }
