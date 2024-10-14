@@ -68,8 +68,8 @@ public class EnrollmentServiceIMPL implements EnrollmentService {
                 .stream()
                 .map(enrollment -> new GetEnrollmentDetailsDTO(
                         enrollment.getEnrollmentId(),
-                        enrollment.getStudent().getUserId(),
-                        enrollment.getCourse().getCourseId(),
+                        enrollment.getStudent().getUserName(),
+                        enrollment.getCourse().getCourseTitle(),
                         enrollment.getCompletionStatus()
                 ))
                 .collect(Collectors.toList());

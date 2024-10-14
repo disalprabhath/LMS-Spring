@@ -11,8 +11,8 @@ import lombok.NoArgsConstructor;
 public class GetEnrollmentDetailsDTO {
 
     private int EnrollmentId;
-    private int student;
-    private int course;
+    private String student;
+    private String course;
     private CompletionStatus completionStatus;
 
 
